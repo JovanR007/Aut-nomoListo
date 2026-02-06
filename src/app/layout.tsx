@@ -28,11 +28,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <Script
+        <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=pub-2711463860910246"
           crossOrigin="anonymous"
-          strategy="afterInteractive"
         />
       </head>
       <body className={cn(outfit.className, "antialiased relative min-h-screen overflow-x-hidden bg-background text-foreground")}>
