@@ -3,8 +3,7 @@ import { Outfit } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { CookieBanner } from "@/components/layout/cookie-banner";
-
-import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
 
 const outfit = Outfit({ subsets: ["latin"] });
 
@@ -49,6 +48,7 @@ export default function RootLayout({
           {children}
         </main>
         <CookieBanner />
+        <Analytics />
       </body>
     </html>
   );
